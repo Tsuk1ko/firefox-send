@@ -99,10 +99,7 @@ const web = {
               path.resolve(__dirname, 'common'),
               // some dependencies need to get re-babeled because we
               // have different targets than their default configs
-              path.resolve(
-                __dirname,
-                'node_modules/@dannycoates/webcrypto-liner'
-              ),
+              path.resolve(__dirname, 'node_modules/webcrypto-liner'),
               path.resolve(__dirname, 'node_modules/@fluent'),
               path.resolve(__dirname, 'node_modules/intl-pluralrules')
             ],
