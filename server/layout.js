@@ -1,6 +1,7 @@
 const html = require('choo/html');
 const assets = require('../common/assets');
 const initScript = require('./initScript');
+const ga = require('../app/ui/ga');
 
 module.exports = function(state, body = '') {
   return html`
@@ -63,6 +64,7 @@ module.exports = function(state, body = '') {
           color="#838383"
         />
         <script defer src="${assets.get('app.js')}"></script>
+        ${ga(state.ga)}
       </head>
       <noscript>
         <div class="noscript">

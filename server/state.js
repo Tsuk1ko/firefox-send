@@ -48,6 +48,7 @@ module.exports = async function(req) {
     robots,
     authConfig,
     prefs,
+    ga: config.analytics_id,
     layout
   };
 };
