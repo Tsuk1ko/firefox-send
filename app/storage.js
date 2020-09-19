@@ -220,7 +220,7 @@ class Storage {
         this.set('dlTokens', JSON.stringify(keep));
       }
     } catch (e) {
-      console.error(e);
+      //
     }
   }
 }
